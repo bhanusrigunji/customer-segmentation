@@ -1,0 +1,43 @@
+{
+  "dataset": "Mall_Customers.csv",
+  "rows": 200,
+  "clustering_features": [
+    "annual_income_k",
+    "spending_score"
+  ],
+  "standardization": "z-score",
+  "candidate_k": [
+    {
+      "k": 2,
+      "inertia": 270.892,
+      "silhouette": 0.2933
+    },
+    {
+      "k": 3,
+      "inertia": 195.358,
+      "silhouette": 0.3749
+    },
+    {
+      "k": 4,
+      "inertia": 141.237,
+      "silhouette": 0.4082
+    },
+    {
+      "k": 5,
+      "inertia": 65.579,
+      "silhouette": 0.5539
+    },
+    {
+      "k": 6,
+      "inertia": 55.376,
+      "silhouette": 0.5378
+    },
+    {
+      "k": 7,
+      "inertia": 51.516,
+      "silhouette": 0.5078
+    }
+  ],
+  "selected_k": 5,
+  "selection_note": "Selected k=5 to show interpretable income/spending patterns; compare diagnostics and business usefulness before applying elsewhere."
+}
